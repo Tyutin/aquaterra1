@@ -1,0 +1,51 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    list-style: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: Acrom, sans-serif;
+    font-size: 18px;
+    color: $COLOR_GRAY_BASIC;
+}
+
+section {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1{
+    font-family: Bebas;
+    font-weight: bold;
+    font-size: 50px;
+    color: $COLOR_BLUE_H1;
+
+    @media (max-width: 1019px) {
+        font-size: 43px;
+    }
+}
+
+h2 {
+    font-family: Bebas;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
