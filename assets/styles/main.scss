@@ -31,6 +31,7 @@ h1{
     font-weight: bold;
     font-size: 50px;
     color: $COLOR_BLUE_H1;
+    text-transform: uppercase;
 
     @media (max-width: 1019px) {
         font-size: 43px;
