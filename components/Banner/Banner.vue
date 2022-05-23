@@ -4,7 +4,7 @@
             <div class="banner_info">
                 <h1 class="banner_header">Скважины на воду в Ижевске <nobr>за 3 дня</nobr></h1>
                 <p>Компактная буровая установка легко и быстро монтируется на ваш участок, аккуратно и без повреждения ландшафта.</p>
-                <CallbackButton :text='sas'/>
+                <CallbackButton/>
             </div>
             <img src="./Banner.webp" alt="Загородный дом с грунтовыми водами под ним">
         </div>
