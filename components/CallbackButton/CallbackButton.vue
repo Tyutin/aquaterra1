@@ -25,6 +25,10 @@
     cursor: pointer;
     transition: all  0.2s ease;
 
+    @media screen and (max-width:470px) {
+        font-size: 18px;
+    }
+
     &:hover {
         @media screen and (min-width: $MEDIA_TABLET_TO_DESKTOP) {
             transform: rotate(-1deg);
