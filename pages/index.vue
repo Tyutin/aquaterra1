@@ -3,6 +3,7 @@
     <Banner />
     <Workflow />
     <CallbackSection />
+    <Benefits />
   </div>
 </template>
 

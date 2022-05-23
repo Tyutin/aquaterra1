@@ -29,7 +29,6 @@
     position: relative;
     padding: 40px 0;
     background-color: $COLOR_BLUE_H1;
-    margin-bottom: 20px;
 
         @media screen and (max-width:$MEDIA_DESKTOP_TO_TABLET) {
             padding: 30px 0;
@@ -41,6 +40,7 @@
         width: 100%;
         height: 20px;
         background-image: url('./wave.svg');
+        z-index: 1;
     }
     &::after {
         bottom: -10px;
