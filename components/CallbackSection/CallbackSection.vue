@@ -100,14 +100,13 @@
 
     &__phone-list-wrapper {
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         @media screen and (max-width:$MEDIA_DESKTOP_TO_TABLET) {
             display: flex;
             justify-content: space-between;
             max-width: 300px;
             width: 100%;
-            margin-bottom: 30px;
         }
     }
 
