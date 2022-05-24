@@ -18,7 +18,7 @@
 <style lang="scss" scoped>
 .work-description {
     display: flex;
-    margin: 30px 0;
+    margin: 40px 0;
     padding-right: 30px;
 
     &_right-side {
