@@ -15,6 +15,10 @@ body {
     font-family: Acrom, sans-serif;
     font-size: 18px;
     color: $COLOR_GRAY_BASIC;
+
+    @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
+        font-size: 16px;
+    }
 }
 
 section {
