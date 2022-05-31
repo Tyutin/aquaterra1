@@ -1,8 +1,7 @@
 <template>
     <div class="work-element">
         <div class="work-element__image-wrapper " :class="{ 'work-element__image-wrapper_with-arrow': arrow }">
-            <!-- <img src="../Workflow/work1.webp" alt=""> -->
-            <img :src="require('../Workflow/' + image + '.webp')" alt="">
+            <img :src="require('../../assets/img/rounds/' + image + '.webp')" alt="">
         </div>
         <p>{{text}}</p>
     </div>
@@ -12,8 +11,8 @@
     export default {
         props: {
             arrow: {
-                type: Boolean,
-                default: false
+                type: String,
+                default: ''
             },
             text: {
                 type: String,

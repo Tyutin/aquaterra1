@@ -78,6 +78,16 @@
       </template>
     </BasicSection>
     <CallbackSection />
+    <BasicSection waved=true>
+      <template>
+        <div class="container">
+          <h2>О компании</h2>
+          <p>Компания «Акватерра» на протяжении семи лет профессионально занимается такими видами работ, как:</p>
+          <AboutList />
+          <p>Мы полностью уверены в качестве наших услуг и предоставляем вам гарантию 2 года на наши работы по бурению скважин.</p>
+        </div>
+      </template>
+    </BasicSection>
   </div>
 </template>
 

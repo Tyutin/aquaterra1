@@ -8,8 +8,8 @@
     export default {
         props: {
             waved: {
-                type: Boolean,
-                default: false
+                type: String,
+                default: ''
             },
         },
     }
@@ -27,7 +27,6 @@
 
     &_waved {
         position: relative;
-        padding-bottom: 60px;
 
         @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
             padding-bottom: 40px;

@@ -8,8 +8,8 @@
     export default {
         props: {
             isRightSide: {
-                type: Boolean,
-                default: false
+                type: String,
+                default: ''
             },
         },
     }
