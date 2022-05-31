@@ -3,10 +3,10 @@
         <div class="container">
             <h2>профессионально и качественно выполним:</h2>
             <ul class="workflow__list">
-                <li class="workflow__element"><WorkElement image="burenie" arrow="true" text="Бурение скважин на воду"/></li>
-                <li class="workflow__element"><WorkElement image="automation" arrow="true" text="Автоматизацию и обустройство скважин"/></li>
-                <li class="workflow__element"><WorkElement image="kanalizaciya" arrow="true" text="Обустройство канализации и водопровода"/></li>
-                <li class="workflow__element"><WorkElement image="teplypol" text="Монтаж теплых полов и отопление"/></li>
+                <li class="workflow__element"><WorkElement image="burenie.webp" arrow="true" text="Бурение скважин на воду"/></li>
+                <li class="workflow__element"><WorkElement image="automation.webp" arrow="true" text="Автоматизацию и обустройство скважин"/></li>
+                <li class="workflow__element"><WorkElement image="kanalizaciya.webp" arrow="true" text="Обустройство канализации и водопровода"/></li>
+                <li class="workflow__element"><WorkElement image="teplypol.webp" text="Монтаж теплых полов и отопление"/></li>
             </ul>
         </div>
     </section>

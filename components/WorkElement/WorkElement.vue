@@ -1,9 +1,15 @@
 <template>
     <div class="work-element">
         <div class="work-element__image-wrapper " :class="{ 'work-element__image-wrapper_with-arrow': arrow }">
-            <img :src="require('../../assets/img/rounds/' + image + '.webp')" alt="">
+            <img :src="require('../../assets/img/rounds/' + image)" alt="">
         </div>
-        <p>{{text}}</p>
+        <p class="work-element__text">
+            <span class="work-element__index" v-if="index">
+                {{index}}
+            </span>
+            {{text}}
+        </p>
+        <p class="work-element__subtext" v-if="subtext">{{subtext}}</p>
     </div>
 </template>
 
@@ -19,6 +25,14 @@
                 default: ''
             },
             image: {
+                type: String,
+                default: ''
+            },
+            subtext: {
+                type: String,
+                default: ''
+            },
+            index: {
                 type: String,
                 default: ''
             },
@@ -55,11 +69,30 @@
         }
     }
 
-    & p {
+    &__text {
         text-align: center;
 
         @media screen and (max-width: 800px) {
             font-size: 16px;
+        }
+    }
+
+    &__subtext {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 5px;
+
+        @media screen and (max-width: 800px) {
+            font-size: 14px;
+        }
+    }
+
+    &__index {
+        color: #5db0f9;
+        font-size: 22px;
+
+        @media screen and (max-width: 800px) {
+            font-size: 18px;
         }
     }
 }

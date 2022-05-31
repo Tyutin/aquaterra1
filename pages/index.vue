@@ -88,6 +88,15 @@
         </div>
       </template>
     </BasicSection>
+    <BasicSection>
+      <template>
+        <div class="container">
+          <h2>Как мы работаем </h2>
+          <p>Начать сотрудничать с нами очень просто!</p>
+          <HowWeWork />
+        </div>
+      </template>
+    </BasicSection>
   </div>
 </template>
 

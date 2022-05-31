@@ -1,19 +1,19 @@
 <template>
     <ul class="about">
         <li class="about__element">
-            <WorkElement image="burenie" text="Бурение скважин на воду"/>
+            <WorkElement image="burenie.webp" text="Бурение скважин на воду"/>
         </li>
         <li class="about__element">
-            <WorkElement image="automation" text="Обустройство скважин"/>
+            <WorkElement image="automation.webp" text="Обустройство скважин"/>
         </li>
         <li class="about__element">
-            <WorkElement image="automation2" text="Автоматизация скважин"/>
+            <WorkElement image="automation2.webp" text="Автоматизация скважин"/>
         </li>
         <li class="about__element">
-            <WorkElement image="teplypol" text="Обустройство систем отопления и тёплых полов"/>
+            <WorkElement image="teplypol.webp" text="Обустройство систем отопления и тёплых полов"/>
         </li>
         <li class="about__element">
-            <WorkElement image="kanalizaciya" text="Обустройство систем водоснабжения и канализации"/>
+            <WorkElement image="kanalizaciya.webp" text="Обустройство систем водоснабжения и канализации"/>
         </li>
     </ul>
 </template>
