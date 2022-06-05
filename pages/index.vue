@@ -97,6 +97,7 @@
         </div>
       </template>
     </BasicSection>
+    <Footer/>
   </div>
 </template>
 

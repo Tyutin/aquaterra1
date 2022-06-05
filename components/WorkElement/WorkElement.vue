@@ -88,7 +88,7 @@
     }
 
     &__index {
-        color: #5db0f9;
+        color: $COLOR_BLUE_LIGHT;
         font-size: 22px;
 
         @media screen and (max-width: 800px) {
