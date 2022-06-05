@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header />
     <Banner />
     <Workflow />
     <CallbackSection />

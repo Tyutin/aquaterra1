@@ -31,7 +31,7 @@
     flex-direction: column;
     max-width: 1020px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding: 75px 0 20px;
     background-image: url('./footer-bg.webp');
     background-position: bottom;
     background-repeat: no-repeat;
