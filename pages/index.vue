@@ -105,6 +105,9 @@
       </template>
     </BasicSection>
     <Footer id="contacts"/>
+    <Lightbox>
+      <CallbackPopup/>
+    </Lightbox>
   </div>
 </template>
 
