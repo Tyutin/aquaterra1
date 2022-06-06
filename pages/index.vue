@@ -7,6 +7,7 @@
     <Benefits />
     <BasicSection waved=true>
       <template>
+        <div class="anchor" id="burenie_skvajin"/>
         <div class="container">
           <h2>Бурение скважин</h2>
           <p>Команда наших профессионалов быстро и качественно выполнит самые сложные виды работ. Компактная и современная буровая установка в самые короткие сроки монтируются на участок, без повреждения ландшафта.</p>
@@ -21,6 +22,7 @@
     </BasicSection>
     <BasicSection waved=true>
       <template>
+        <div class="anchor" id="obustroistvo_i_avtomatizaciya"/>
         <div class="container">
           <h2>Обустройство и автоматизация</h2>
           <p>Автоматизация в разы облегчает пользование скважиной и делает его комфортным, аналогично системе центрального водоснабжения.</p>
@@ -43,6 +45,7 @@
     </BasicSection>
     <BasicSection waved=true>
       <template>
+        <div class="anchor" id="vodoprovod_i_kanalizaciya"/>
         <div class="container">
           <h2>Водопровод и канализация</h2>
           <p>Канализация – важнейшая часть в доме. Без её наличия в загородном доме, у его жителей не будет нужного комфорта и удобства. Именно поэтому установку канализационной системы нужно доверять лишь опытным специалистам.</p>
@@ -68,6 +71,7 @@
     </BasicSection>
     <BasicSection>
       <template>
+        <div class="anchor" id="otoplenie_i_teply_pol"/>
         <div class="container">
           <h2>Отопление и тёплые полы</h2>
           <p>Выбрав систему обогрева «Теплый пол», вы обеспечиваете здоровый микроклимат в своём доме, ведь такой вид отопления не сушит воздух и абсолютно экологичен. Еще одно большое преимущество – это экономия пространства, ведь массивные радиаторы и батареи больше не нужны.</p>
@@ -81,6 +85,7 @@
     <CallbackSection />
     <BasicSection waved=true>
       <template>
+        <div class="anchor" id="o_kompanii"/>
         <div class="container">
           <h2>О компании</h2>
           <p>Компания «Акватерра» на протяжении семи лет профессионально занимается такими видами работ, как:</p>
@@ -91,6 +96,7 @@
     </BasicSection>
     <BasicSection>
       <template>
+        <div class="anchor" id="kak_my_rabotaem"/>
         <div class="container">
           <h2>Как мы работаем </h2>
           <p>Начать сотрудничать с нами очень просто!</p>
@@ -98,7 +104,7 @@
         </div>
       </template>
     </BasicSection>
-    <Footer/>
+    <Footer id="contacts"/>
   </div>
 </template>
 

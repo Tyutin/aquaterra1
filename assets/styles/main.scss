@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -61,4 +64,21 @@ h3{
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.anchor {
+    position: relative;
+    top: -192px;
+
+    @media screen and (max-width: $MEDIA_DESKTOP_TO_TABLET) {
+        top: -190px;
+    }
+
+    @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
+        top: -160px;
+    }
+
+    @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
+        top: -120px;
+    }
 }

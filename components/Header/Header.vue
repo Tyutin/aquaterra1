@@ -2,9 +2,9 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <a href="" class="header__logo">
+                <nuxt-link to="/" class="header__logo">
                     <img src="./logo.svg" alt="Логотип Акватерра">
-                </a>
+                </nuxt-link>
                 <div class="header__contacts">
                     <a href="https://yandex.ru/maps/-/CCUJ5AxD-C" target="_blank" class="header__location">
                         Ижевск
@@ -16,15 +16,29 @@
                 </div>
                 <button class="header__toggle" :class="{'header__toggle-active' : isMenuOpen}" @click="toggleMenuOpen"/>
             </div>
-            <nav class="header__nav" :class="{'header__nav-active' : isMenuOpen}">
+            <nav class="header__nav" :class="{'header__nav-active' : isMenuOpen}" @click="closeMenu">
                 <ul>
-                    <li><a href="">бурение скважин</a></li>
-                    <li><a href="">обустройство и автоматизация</a></li>
-                    <li><a href="">водопровод и канализация</a></li>
-                    <li><a href="">отопление</a></li>
-                    <li><a href="">о компании</a></li>
-                    <li><a href="">как мы работаем</a></li>
-                    <li><a href="">контакты</a></li>
+                    <li>
+                        <nuxt-link to="#burenie_skvajin">бурение скважин</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#obustroistvo_i_avtomatizaciya">обустройство и автоматизация</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#vodoprovod_i_kanalizaciya">водопровод и канализация</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#otoplenie_i_teply_pol">отопление</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#o_kompanii">о компании</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#kak_my_rabotaem">как мы работаем</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#contacts">контакты</nuxt-link>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -41,6 +55,9 @@
         methods: {
             toggleMenuOpen() {
                 this.isMenuOpen = !this.isMenuOpen
+            },
+            closeMenu() {
+                this.isMenuOpen = false
             }
         },
     }
