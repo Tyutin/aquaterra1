@@ -1,12 +1,21 @@
 <template>
-    <div class="lightbox">
+    <div class="lightbox" @click="closeAllPopup" v-if="callbackPopupIsOpen">
         <slot />
     </div>
 </template>
 
 <script>
     export default {
-        
+        computed: {
+            callbackPopupIsOpen() {
+            return this.$store.state.popups.callbackPopupIsOpen 
+            }
+        },
+        methods: {
+            closeAllPopup() {
+                this.$store.commit('popups/closeAllPopup')
+            }
+        },
     }
 </script>
 

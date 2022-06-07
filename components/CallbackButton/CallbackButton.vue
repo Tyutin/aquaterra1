@@ -1,11 +1,16 @@
 <template>
-    <button class="callback-button">
+    <button class="callback-button" @click="openCallbackPopup">
         Получить консультацию
     </button>
 </template>
 
 <script>
     export default {
+        methods: {
+            openCallbackPopup() {
+                this.$store.commit('popups/openCallbackPopup')
+            }
+        },
     }
 </script>
 

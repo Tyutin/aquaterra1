@@ -1,6 +1,6 @@
 <template>
-    <form class="callback-popup">
-        <button class="callback-popup__close"/>
+    <form class="callback-popup" @click.stop v-if="callbackPopupIsOpen">
+        <button class="callback-popup__close" @click.prevent="closeCallbackPopup"/>
         <p class="callback-popup__header">Оставьте заявку</p>
         <p class="callback-popup__subheader">Чтобы получить консультацию или сделать заказ</p>
         <input type="text" name="name" placeholder="Ваше имя*" class="callback-popup__input">
@@ -13,7 +13,16 @@
 
 <script>
     export default {
-        
+        computed: {
+            callbackPopupIsOpen() {
+            return this.$store.state.popups.callbackPopupIsOpen 
+            }
+        },
+        methods: {
+            closeCallbackPopup() {
+                this.$store.commit('popups/closeCallbackPopup')
+            }
+        },
     }
 </script>
 
@@ -25,6 +34,7 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    border-radius: 6px;
 
     @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
         width: 100%;
@@ -92,8 +102,8 @@
 
     &__close {
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 15px;
+        top: 15px;
         height: 30px;
         width: 30px;
         opacity: 0.5;

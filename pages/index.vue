@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-scroll-lock="callbackPopupIsOpen">
     <Header />
     <Banner />
     <Workflow />
@@ -113,6 +113,11 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  computed: {
+    callbackPopupIsOpen() {
+      return this.$store.state.popups.callbackPopupIsOpen 
+    }
+  },
 }
 </script>
