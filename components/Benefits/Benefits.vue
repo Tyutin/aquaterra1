@@ -86,6 +86,7 @@
         display: none;
         @media screen and (min-width:768px) {
             display: block;
+            height: 279px;
         }
     }
 }

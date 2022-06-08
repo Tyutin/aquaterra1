@@ -189,12 +189,16 @@
     &__logo {
         height: 70px;
 
-        @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
-            height: 50px;
+        & > img {
+            height: 70px;
         }
 
-        & img {
-            height: 100%;
+        @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
+            height: 50px;
+
+            & > img {
+                height: 50px;
+            }
         }
     }
 

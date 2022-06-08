@@ -49,6 +49,10 @@
 
     & > img {
         object-fit: cover;
+
+        @media screen and (max-width: $MEDIA_DESKTOP_TO_TABLET) {
+            height: 37.05vw;
+        }
     }
 }
 </style>

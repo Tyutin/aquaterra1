@@ -60,9 +60,16 @@
     & img {
         margin: 0 30px;
         width: 550px;
+        height: 382px;
 
         @media (max-width: 1019px) {
             margin-bottom: 30px;
+            height: unset;
+        }
+
+        @media screen and (max-width: 570px) {
+            width: 100%;
+            height: calc((100vw - 20px)* 0.6945);
         }
     }
 }

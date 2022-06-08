@@ -93,7 +93,7 @@
     }
 
     &__logo {
-        max-width: 160px;
+        height: 70px;;
         margin-bottom: 10px;
 
         @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
