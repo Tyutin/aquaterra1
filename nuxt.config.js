@@ -4,15 +4,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'aquaterra_nuxt',
+    title: 'Акватерра - бурение скважин на воду в Ижевске | Обустройство скважин',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Бурение и обустройство скважин на воду. Монтаж систем водопровода и канализации. Обустройство систем отопления и тёплых полов. Гарантия качества!' },
+      { name: 'keywords', content: 'акватера, акватерра ижевск, акватерра, акватерра18, бурение скважин ижевск, монтаж водопровода, монтаж канализации бурение, скважина, бурение скважин, обустройство скважин, автоматизация скважин, отопление, система отопления, теплый пол, водопровод, канализация' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
