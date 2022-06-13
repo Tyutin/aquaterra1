@@ -90,7 +90,7 @@
         border-bottom: 4px solid $COLOR_BLUE_H1;
         transition: 0.3s;
 
-        @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
+        @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
             width: 36px;
             height: 28px;
         }
@@ -137,10 +137,12 @@
             right: 0;
             top: -250%;
             width: 100%;
-            padding: 0 10px;
+            padding: 10px;
             background-color: #fff;
             font-size: 24px;
             transition: top 0.3s ease;
+            max-height: calc(100vh - 90px);
+            overflow: scroll;
 
             &-active {
                 top: 100%;
@@ -193,7 +195,7 @@
             height: 70px;
         }
 
-        @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
+        @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
             height: 50px;
 
             & > img {
