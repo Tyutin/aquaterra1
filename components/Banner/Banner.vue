@@ -2,7 +2,7 @@
     <section class="banner">
         <div class="container banner_container">
             <div class="banner_info">
-                <h1 class="banner_header">Скважины на воду в Ижевске <nobr>за 3 дня</nobr></h1>
+                <h1 class="banner_header">Скважины на воду <nobr>в Ижевске</nobr> <nobr>за 3 дня</nobr></h1>
                 <p>Компактная буровая установка легко и быстро монтируется на ваш участок, аккуратно и без повреждения ландшафта.</p>
                 <CallbackButton/>
             </div>
@@ -49,10 +49,12 @@
 
     &_header{
         max-width: 330px;
+        max-height: 100px;
         margin-bottom: 30px;
 
         @media (max-width: $MEDIA_DESKTOP_TO_TABLET) {
             max-width: unset;
+            max-height: 87px;
             margin-bottom: 24px;
         }
     }
