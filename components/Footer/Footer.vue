@@ -8,13 +8,13 @@
                 <p class="footer__subinfo"><a href="https://buro-sv.ru" target="_blank">Производство сайта Бюро СВ</a></p>
             </div>
             <div class="footer__half">
-                <div class="footer__contact">
-                    <a href="https://yandex.ru/maps/-/CCUJ5AxD-C" target="_blank" class="footer__contact">
+                <div class="footer__contact-wrapper">
+                    <a href="https://yandex.ru/maps/-/CCUJ5AxD-C" class="footer__contact">
                         <img src="../../assets/img/icon_location_white.svg" alt="Иконка локации" class="footer__icon footer__icon_loc">
                         Завьяловский р-н, д. Хохряки, <nobr>ул. Весенняя, д. 14</nobr>
                     </a>
                 </div>
-                <div class="footer__contact">
+                <div class="footer__contact-wrapper">
                     <a href="mailto:aquaterra18@yandex.ru" class="footer__contact">
                         <img src="../../assets/img/icon_mail_white.svg" alt="Иконка электронной почты" class="footer__icon footer__icon_mail">
                         aquaterra18@yandex.ru
@@ -37,9 +37,31 @@
     background-repeat: no-repeat;
     min-height: 465px;
 
+    @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
+        padding-bottom: 30px;
+    }
+
+    &__contact-wrapper {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-family: 'Bebas', sans-serif;
+        font-size: 22px;
+
         @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
-            padding-bottom: 30px;
+            width: 100%;
         }
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: flex-end;
+        
+        @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
 
     &__container {
         display: flex;
@@ -56,26 +78,20 @@
 
     &__half {
         color: #fff;
-        width: 50%;
+
+        &:last-of-type {
+            width: 70%;
+        }
 
         @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-    }
 
-    &__contact {
-        margin-bottom: 20px;
-        font-size: 22px;
-        font-family: 'Bebas', sans-serif;
-        text-transform: uppercase;
-        text-align: right;
-
-        @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
-            width: 100%;
-            text-align: center;
+            &:last-of-type {
+                width: 100%;
+            }
         }
     }
 
