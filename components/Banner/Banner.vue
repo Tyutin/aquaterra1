@@ -57,6 +57,10 @@
             max-height: 87px;
             margin-bottom: 24px;
         }
+
+        @media screen and (max-width: 319px) {
+            max-height: 131px;
+        }
     }
 
     & img {

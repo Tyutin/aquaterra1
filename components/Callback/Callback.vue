@@ -59,22 +59,26 @@
             font-size: 35px;
         }
 
-            &:first-of-type {
-                @media screen and (min-width: $MEDIA_TABLET_TO_DESKTOP) {
-                    position: relative;
-                    margin-right: 40px;
+        &:first-of-type {
+            @media screen and (min-width: $MEDIA_TABLET_TO_DESKTOP) {
+                position: relative;
+                margin-right: 40px;
 
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        width: 4px;
-                        height: 100%;
-                        right: -22px;
-                        background-color: #fff;
-                        top: -4px;
-                    }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 4px;
+                    height: 100%;
+                    right: -22px;
+                    background-color: #fff;
+                    top: -4px;
                 }
             }
+        }
+
+        @media screen and (max-width: 319px) {
+            font-size: 29px;
+        }
     }
 
     &__phone-list-wrapper {

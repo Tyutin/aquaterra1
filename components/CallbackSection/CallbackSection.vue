@@ -24,9 +24,11 @@
         position: absolute;
         content: "";
         width: 100%;
-        height: 20px;
-        background-image: url('./wave.svg');
+        height: 21.5px;
+        background-image: url('./waveFull2.svg');
         z-index: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     &::after {
         bottom: -10px;

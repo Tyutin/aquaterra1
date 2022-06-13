@@ -37,9 +37,10 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 12px;
-            background-image: url('./sectionWave.svg');
-            background-repeat: repeat;
+            height: 7px;
+            background-image: url('./sectionWaveFull3.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 
