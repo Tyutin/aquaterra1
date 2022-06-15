@@ -19,7 +19,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: '//code.jivo.ru/widget/CH3AMXtgq9', body: true, async: true }
+      { src: '//code.jivo.ru/widget/CH3AMXtgq9', body: true, async: true, defer: true }
     ]
   },
 
