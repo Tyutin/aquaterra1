@@ -16,6 +16,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: '//code.jivo.ru/widget/CH3AMXtgq9', body: true, async: true }
     ]
   },
 
@@ -44,7 +47,7 @@ export default {
     [
       '@nuxtjs/yandex-metrika',
       {
-        id: '89183893',
+        id: '47185269',
         webvisor: true,
         clickmap: true,
         trackLinks: true,
