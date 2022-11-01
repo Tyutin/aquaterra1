@@ -13,14 +13,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Бурение и обустройство скважин на воду. Монтаж систем водопровода и канализации. Обустройство систем отопления и тёплых полов. Гарантия качества!' },
       { name: 'keywords', content: 'акватера, акватерра ижевск, акватерра, акватерра18, бурение скважин ижевск, монтаж водопровода, монтаж канализации бурение, скважина, бурение скважин, обустройство скважин, автоматизация скважин, отопление, система отопления, теплый пол, водопровод, канализация' },
-      { name: 'yandex-verification', content: 'acc04ad192ac3e00' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      { src: '//code.jivo.ru/widget/CH3AMXtgq9', body: true, async: true, defer: true }
-    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -45,16 +41,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
-    [
-      '@nuxtjs/yandex-metrika',
-      {
-        id: '47185269',
-        webvisor: true,
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      }
-    ]
   ],
   styleResources: {
     scss: ['./assets/styles/variables.scss']
